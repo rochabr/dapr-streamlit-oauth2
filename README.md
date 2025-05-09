@@ -4,7 +4,7 @@ This project demonstrates an OAuth2 login flow using [Dapr's HTTP middleware](ht
 
 ---
 
-## 📦 Components
+## Components
 
 - **Streamlit UI**: User-facing app that initiates login and displays tokens.
 - **FastAPI Gateway**: Acts as a proxy for Dapr's redirect and handles token exchange.
@@ -13,7 +13,7 @@ This project demonstrates an OAuth2 login flow using [Dapr's HTTP middleware](ht
 
 ---
 
-## 🚀 Features
+## Features
 
 ✅ OAuth2 Authorization Code Flow via Dapr  
 ✅ Dapr OAuth2 Middleware Integration  
@@ -23,7 +23,7 @@ This project demonstrates an OAuth2 login flow using [Dapr's HTTP middleware](ht
 
 ---
 
-## 🧰 Prerequisites
+## Prerequisites
 
 - Python 3.10+
 - [Dapr CLI](https://docs.dapr.io/get-dapr/cli/)
@@ -53,7 +53,7 @@ This project demonstrates an OAuth2 login flow using [Dapr's HTTP middleware](ht
 
 ---
 
-## ⚙️ Setup
+## ⚙Setup
 
 ### 1. Clone and install dependencies
 
@@ -90,7 +90,7 @@ Then open [http://localhost:8501](http://localhost:8501) in your browser.
 
 ---
 
-## 🧪 How It Works
+## How It Works
 
 1. Streamlit shows a **Login with Microsoft** button.
 2. Clicking it sends user to `http://localhost:3500/v1.0/invoke/streamlit-wrapper/method/auth` (handled by FastAPI).
@@ -101,7 +101,7 @@ Then open [http://localhost:8501](http://localhost:8501) in your browser.
 
 ---
 
-## 🛡️ `.env.example`
+## `.env.example`
 
 ```env
 # Azure AD Tenant ID
@@ -128,7 +128,7 @@ REDIRECT_URL=http://localhost:3500/v1.0/invoke/streamlit-wrapper/method/auth
 
 ---
 
-## 🔐 Security Notes
+## Security Notes
 
 - Tokens are stored in memory/session only.
 - Use HTTPS in production.
@@ -137,7 +137,7 @@ REDIRECT_URL=http://localhost:3500/v1.0/invoke/streamlit-wrapper/method/auth
 
 ---
 
-# 🏗️ Azure AD App Registrations
+## Azure AD App Registrations
 
 This demo requires **two applications registered in Azure Entra ID (formerly Azure AD)**.
 
@@ -179,9 +179,3 @@ This app represents the downstream API that will receive OBO tokens.
    - Click **Grant admin consent**
 
 After this setup, the `streamlit-dapr-demo` frontend can acquire a user token and use it in an OBO flow to call `streamlit-dapr-demo-api`.
-
----
-
-## 🙋‍♀️ Questions?
-
-Open an issue or reach out to [yourname@company.com](mailto:yourname@company.com)
