@@ -1,4 +1,4 @@
-# 🛡️ Dapr OAuth2 Login + On-Behalf-Of Flow Demo
+# Streamlit + Dapr OAuth2 Login + On-Behalf-Of Flow Demo
 
 This project demonstrates an OAuth2 login flow using [Dapr's HTTP middleware](https://docs.dapr.io/reference/components/middleware/http/middleware-oauth2/) with a `Streamlit` frontend, a `FastAPI` proxy, and a secure [On-Behalf-Of (OBO) token exchange](https://learn.microsoft.com/en-us/azure/active-directory/develop/v2-oauth2-on-behalf-of-flow) using Microsoft Entra ID (Azure AD).
 
