@@ -58,8 +58,8 @@ This project demonstrates an OAuth2 login flow using [Dapr's HTTP middleware](ht
 ### 1. Clone and install dependencies
 
 ```bash
-git clone https://github.com/your-org/dapr-obo-demo.git
-cd dapr-obo-demo
+git clone https://github.com/your-org/dapr-streamlit-oauth2.git
+cd dapr-streamlit-oauth2
 pip install -r requirements.txt
 ```
 
